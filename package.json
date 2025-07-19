@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "echo 'Development server placeholder - please configure your actual dev command'",
-    "start": "echo 'Start command placeholder'",
+    "dev": "npx http-server . -p 3000 -c-1",
+    "start": "npm run dev",
     "build": "echo 'Build command placeholder'"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
