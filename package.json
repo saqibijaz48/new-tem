@@ -1,0 +1,13 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo 'Development server placeholder - please configure your actual dev command'",
+    "start": "echo 'Start command placeholder'",
+    "build": "echo 'Build command placeholder'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
