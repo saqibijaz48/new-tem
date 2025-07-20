@@ -68,8 +68,14 @@ export default function Navbar() {
                   </Link>
                 )}
                 <div className="flex items-center space-x-2">
-                  <User className="w-5 h-5 text-gray-600" />
-                  <span className="text-sm text-gray-600">{user?.email}</span>
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
+                    <span className="text-white font-semibold text-sm">
+                      {user?.email?.charAt(0)?.toUpperCase() || "U"}
+                    </span>
+                  </div>
+                  <span className="text-sm text-gray-600">
+                    {user?.email?.split("@")[0]}
+                  </span>
                 </div>
               </div>
             ) : (
@@ -81,7 +87,7 @@ export default function Navbar() {
                   {t("login")}
                 </Link>
                 <Link
-                  href="/auth/signup"
+                  href="/auth/register"
                   className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors"
                 >
                   {t("signup")}
@@ -146,8 +152,14 @@ export default function Navbar() {
                     </Link>
                   )}
                   <div className="flex items-center space-x-2 pt-2">
-                    <User className="w-5 h-5 text-gray-600" />
-                    <span className="text-sm text-gray-600">{user?.email}</span>
+                    <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
+                      <span className="text-white font-semibold text-sm">
+                        {user?.email?.charAt(0)?.toUpperCase() || "U"}
+                      </span>
+                    </div>
+                    <span className="text-sm text-gray-600">
+                      {user?.email?.split("@")[0]}
+                    </span>
                   </div>
                 </div>
               ) : (
@@ -160,7 +172,7 @@ export default function Navbar() {
                     {t("login")}
                   </Link>
                   <Link
-                    href="/auth/signup"
+                    href="/auth/register"
                     className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
