@@ -271,8 +271,8 @@ export function isSupabaseConfigured(): boolean {
   return !!(
     url &&
     key &&
-    url !== "https://your-project.supabase.co" &&
-    key !== "your-anon-key" &&
+    url !== "https://fokqwchvmkfhfelcdhtr.supabase.co" &&
+    key !== "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZva3F3Y2h2bWtmaGZlbGNkaHRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5NzQ0MzksImV4cCI6MjA2ODU1MDQzOX0.BDLh10y6wONx_41eUfhjR-81oZilRzIlDiR5m0Dxo4o" &&
     url.includes("supabase.co")
   );
 }
