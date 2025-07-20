@@ -1,7 +1,6 @@
-import { useAppDispatch, useAppSelector } from "@/app/lib/hooks";
-import { useAppDispatch, useAppSelector } from "../../lib/hooks";
-import { setLanguage } from "../../lib/features/languageSlice";
-import { cn } from "../../lib/utils";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { setLanguage } from "@/lib/features/languageSlice";
+import { cn } from "@/lib/utils";
 
 export default function LanguageSwitcher() {
   const dispatch = useAppDispatch();

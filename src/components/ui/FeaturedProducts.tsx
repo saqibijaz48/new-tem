@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { Product } from "@/app/types";
-import { getProducts } from "@/app/lib/database";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
+import { Product } from "@/types";
+import { getProducts } from "@/lib/database";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
 import ProductCard, { ProductCardSkeleton } from "./ProductCard";
 
 export default function FeaturedProducts() {

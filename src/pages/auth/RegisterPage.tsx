@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Mail, Lock, User, ArrowRight } from "lucide-react";
-import { useAppDispatch, useAppSelector } from "@/app/lib/hooks";
-import { setUser, setLoading } from "@/app/lib/features/authSlice";
-import { useTranslation } from "@/app/lib/translations";
-import { supabase } from "@/app/lib/supabase";
-import { isSupabaseConfigured } from "@/app/lib/mockData";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { setUser, setLoading } from "@/lib/features/authSlice";
+import { useTranslation } from "@/lib/translations";
+import { supabase } from "@/lib/supabase";
+import { isSupabaseConfigured } from "@/lib/mockData";
 import toast from "react-hot-toast";
 
 export default function RegisterPage() {

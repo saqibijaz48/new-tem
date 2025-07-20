@@ -1,14 +1,14 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { X, Plus, Minus, Trash2 } from "lucide-react";
-import { useAppDispatch, useAppSelector } from "@/app/lib/hooks";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import {
   closeCart,
   removeFromCart,
   updateQuantity,
-} from "@/app/lib/features/cartSlice";
-import { useTranslation } from "@/app/lib/translations";
-import { formatPrice, getImageUrl } from "@/app/lib/utils";
+} from "@/lib/features/cartSlice";
+import { useTranslation } from "@/lib/translations";
+import { formatPrice, getImageUrl } from "@/lib/utils";
 
 export default function CartSidebar() {
   const dispatch = useAppDispatch();

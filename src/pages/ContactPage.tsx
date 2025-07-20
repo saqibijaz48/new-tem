@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
-import { createContactMessage } from "@/app/lib/database";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
+import { createContactMessage } from "@/lib/database";
 import toast from "react-hot-toast";
 
 export default function ContactPage() {

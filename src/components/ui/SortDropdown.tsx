@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
-import { cn } from "@/app/lib/utils";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
+import { cn } from "@/lib/utils";
 
 export type SortOption =
   | "newest"

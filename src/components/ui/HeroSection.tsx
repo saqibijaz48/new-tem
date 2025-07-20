@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, ShoppingBag } from "lucide-react";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
 
 export default function HeroSection() {
   const language = useAppSelector((state) => state.language.current);

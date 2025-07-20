@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
 
 export default function Footer() {
   const language = useAppSelector((state) => state.language.current);

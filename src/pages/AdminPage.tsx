@@ -9,15 +9,15 @@ import {
   Eye,
   Plus,
 } from "lucide-react";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
 import {
   getProducts,
   getCategories,
   getAllOrders,
   getUsers,
-} from "@/app/lib/database";
-import { formatPrice } from "@/app/lib/utils";
+} from "@/lib/database";
+import { formatPrice } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
 interface DashboardStats {

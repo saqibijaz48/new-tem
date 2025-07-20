@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
-import { Product } from "@/app/types";
-import { useAppDispatch, useAppSelector } from "@/app/lib/hooks";
-import { addToCart } from "@/app/lib/features/cartSlice";
-import { useTranslation } from "@/app/lib/translations";
-import { formatPrice, getImageUrl } from "@/app/lib/utils";
+import { Product } from "@/types";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { addToCart } from "@/lib/features/cartSlice";
+import { useTranslation } from "@/lib/translations";
+import { formatPrice, getImageUrl } from "@/lib/utils";
 import toast from "react-hot-toast";
 
 interface ProductCardProps {

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Category } from "@/app/types";
-import { getCategories } from "@/app/lib/database";
-import { useAppSelector } from "@/app/lib/hooks";
+import { Category } from "@/types";
+import { getCategories } from "@/lib/database";
+import { useAppSelector } from "@/lib/hooks";
 import { LoadingSkeleton } from "./Loading";
 
 export default function CategoriesSection() {

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X, User } from "lucide-react";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
 import LanguageSwitcher from "./LanguageSwitcher";
 import CartButton from "./CartButton";
 

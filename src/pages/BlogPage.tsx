@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Calendar, User, ArrowRight } from "lucide-react";
-import { BlogPost } from "@/app/types";
-import { getBlogPosts } from "@/app/lib/database";
-import { useAppSelector } from "@/app/lib/hooks";
-import { formatDate } from "@/app/lib/utils";
-import { LoadingSkeleton } from "@/app/components/ui/Loading";
+import { BlogPost } from "@/types";
+import { getBlogPosts } from "@/lib/database";
+import { useAppSelector } from "@/lib/hooks";
+import { formatDate } from "@/lib/utils";
+import { LoadingSkeleton } from "@/components/ui/Loading";
 
 export default function BlogPage() {
   const [posts, setPosts] = useState<BlogPost[]>([]);

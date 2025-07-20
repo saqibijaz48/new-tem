@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Package, Calendar, CreditCard, Eye, X } from "lucide-react";
-import { Order } from "@/app/types";
-import { getOrders } from "@/app/lib/database";
-import { useAppSelector } from "@/app/lib/hooks";
-import { useTranslation } from "@/app/lib/translations";
-import { formatPrice, formatDate } from "@/app/lib/utils";
+import { Order } from "@/types";
+import { getOrders } from "@/lib/database";
+import { useAppSelector } from "@/lib/hooks";
+import { useTranslation } from "@/lib/translations";
+import { formatPrice, formatDate } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
 export default function OrdersPage() {

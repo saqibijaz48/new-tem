@@ -1,5 +1,5 @@
 import { Shield, Truck, Heart, Award, Users, Globe } from "lucide-react";
-import { useAppSelector } from "@/app/lib/hooks";
+import { useAppSelector } from "@/lib/hooks";
 
 export default function AboutPage() {
   const language = useAppSelector((state) => state.language.current);

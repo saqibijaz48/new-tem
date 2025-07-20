@@ -1,6 +1,6 @@
 import { ShoppingCart } from "lucide-react";
-import { useAppDispatch, useAppSelector } from "@/app/lib/hooks";
-import { toggleCart } from "@/app/lib/features/cartSlice";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { toggleCart } from "@/lib/features/cartSlice";
 
 export default function CartButton() {
   const dispatch = useAppDispatch();

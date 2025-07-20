@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { cn, getImageUrl } from "@/app/lib/utils";
+import { cn, getImageUrl } from "@/lib/utils";
 
 interface ProductImageGalleryProps {
   images: string[];
