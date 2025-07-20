@@ -208,11 +208,56 @@ export const mockBlogPosts: BlogPost[] = [
     id: "1",
     title_en: "Summer Fashion Trends 2024",
     title_lt: "2024 metų vasaros mados tendencijos",
-    content_en: "Discover the hottest fashion trends for summer 2024...",
-    content_lt: "Atraskite karščiausias 2024 metų vasaros mados tendencijas...",
+    content_en:
+      "Discover the hottest fashion trends for summer 2024. From vibrant colors to sustainable fabrics, this season brings exciting new styles to refresh your wardrobe.",
+    content_lt:
+      "Atraskite karščiausias 2024 metų vasaros mados tendencijas. Nuo ryškių spalvų iki tvarių audinių - šis sezonas atsineša jaudinančius naujus stilius jūsų spintai atnaujinti.",
+    excerpt_en: "Discover the hottest fashion trends for summer 2024...",
+    excerpt_lt: "Atraskite karščiausias 2024 metų vasaros mados tendencijas...",
+    featured_image:
+      "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800",
     slug: "summer-fashion-trends-2024",
     author_id: "1",
-    published: true,
+    is_published: true,
+    published_at: new Date().toISOString(),
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  {
+    id: "2",
+    title_en: "Sustainable Fashion: A Guide to Eco-Friendly Shopping",
+    title_lt: "Tvari mada: ekologiškų pirkimų vadovas",
+    content_en:
+      "Learn how to make more sustainable fashion choices. This comprehensive guide covers everything from fabric selection to ethical brands.",
+    content_lt:
+      "Sužinokite, kaip daryti tvaresnius mados pasirinkimus. Šis išsamus vadovas aprėpia viską nuo audinių pasirinkimo iki etiškai veiklų prekės ženklų.",
+    excerpt_en: "Learn how to make more sustainable fashion choices...",
+    excerpt_lt: "Sužinokite, kaip daryti tvaresnius mados pasirinkimus...",
+    featured_image:
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800",
+    slug: "sustainable-fashion-guide",
+    author_id: "1",
+    is_published: true,
+    published_at: new Date().toISOString(),
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  {
+    id: "3",
+    title_en: "The Best Running Gear for 2024",
+    title_lt: "Geriausia bėgimo įranga 2024 metams",
+    content_en:
+      "Gear up for your running goals with the latest and greatest running equipment. From shoes to accessories, we've got you covered.",
+    content_lt:
+      "Pasirengkite savo bėgimo tikslams su naujausią ir geriausia bėgimo įranga. Nuo batų iki aksesuarų - mes jums viską paruošėme.",
+    excerpt_en: "Gear up for your running goals with the latest equipment...",
+    excerpt_lt: "Pasirengkite savo bėgimo tikslams su naujausią įranga...",
+    featured_image:
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800",
+    slug: "best-running-gear-2024",
+    author_id: "1",
+    is_published: true,
+    published_at: new Date().toISOString(),
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   },
