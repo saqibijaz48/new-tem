@@ -254,7 +254,7 @@ export async function updateOrderStatus(
 export async function getBlogPosts(published = true): Promise<BlogPost[]> {
   // Use mock data if Supabase is not configured
   if (!isSupabaseConfigured()) {
-    return mockBlogPosts.filter((post) => !published || post.published);
+    return mockBlogPosts.filter((post) => !published || post.is_published);
   }
 
   try {
@@ -276,14 +276,14 @@ export async function getBlogPosts(published = true): Promise<BlogPost[]> {
         error.details,
       );
       // Fallback to mock data
-      return mockBlogPosts.filter((post) => !published || post.published);
+      return mockBlogPosts.filter((post) => !published || post.is_published);
     }
 
     return data as BlogPost[];
   } catch (error) {
     console.error("Error fetching blog posts:", error);
     // Fallback to mock data
-    return mockBlogPosts.filter((post) => !published || post.published);
+    return mockBlogPosts.filter((post) => !published || post.is_published);
   }
 }
 
