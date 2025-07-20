@@ -85,9 +85,13 @@ export interface BlogPost {
   title_lt: string;
   content_en: string;
   content_lt: string;
+  excerpt_en?: string;
+  excerpt_lt?: string;
+  featured_image?: string;
   slug: string;
   author_id: string;
-  published: boolean;
+  is_published: boolean;
+  published_at?: string;
   created_at: string;
   updated_at: string;
 }
