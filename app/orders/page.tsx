@@ -170,7 +170,7 @@ export default function OrdersPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">
                         {language === "en" ? "Order" : "Užsakymas"} #
-                        {order.order_number}
+                        {order.order_number || order.id.slice(-8).toUpperCase()}
                       </h3>
                       <div className="flex items-center text-sm text-gray-600">
                         <Calendar className="w-4 h-4 mr-1" />

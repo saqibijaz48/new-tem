@@ -44,6 +44,7 @@ export interface CartItem {
 export interface Order {
   id: string;
   user_id: string;
+  order_number?: string;
   status: "pending" | "processing" | "shipped" | "delivered" | "cancelled";
   total_amount: number;
   currency: string;
@@ -52,6 +53,7 @@ export interface Order {
   billing_address: Address;
   payment_method: string;
   notes?: string;
+  tracking_number?: string;
   created_at: string;
   updated_at: string;
   order_items?: OrderItem[];
