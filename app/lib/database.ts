@@ -264,7 +264,7 @@ export async function getBlogPosts(published = true): Promise<BlogPost[]> {
       .order("created_at", { ascending: false });
 
     if (published) {
-      query = query.eq("published", true);
+      query = query.eq("is_published", true);
     }
 
     const { data, error } = await query;
