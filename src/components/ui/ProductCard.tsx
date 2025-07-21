@@ -37,12 +37,10 @@ export default function ProductCard({ product }: ProductCardProps) {
     <div className="group bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
       <Link href={`/product/${product.id}`}>
         <div className="relative aspect-square bg-gray-100 overflow-hidden">
-          <Image
+          <img
             src={getImageUrl(product.image_url, 400, 400)}
             alt={title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
           {product.stock <= 0 && (
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">

@@ -83,12 +83,10 @@ export default function CartSidebar() {
                     className="flex items-center space-x-3 bg-gray-50 rounded-lg p-3"
                   >
                     <div className="relative w-16 h-16 bg-white rounded-md overflow-hidden">
-                      <Image
+                      <img
                         src={getImageUrl(product.image_url, 100, 100)}
                         alt={title}
-                        fill
-                        className="object-cover"
-                        sizes="64px"
+                        className="w-full h-full object-cover"
                       />
                     </div>
 

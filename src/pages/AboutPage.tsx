@@ -129,13 +129,10 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                <Image
+                <img
                   src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
                   alt="About us"
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -214,12 +211,10 @@ export default function AboutPage() {
                 className="bg-white rounded-xl shadow-soft p-8 text-center card-hover"
               >
                 <div className="relative w-24 h-24 mx-auto mb-6">
-                  <Image
+                  <img
                     src={member.image}
                     alt={member.name}
-                    fill
-                    className="object-cover rounded-full"
-                    sizes="96px"
+                    className="w-full h-full object-cover rounded-full"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">

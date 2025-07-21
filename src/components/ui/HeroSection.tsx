@@ -83,13 +83,10 @@ export default function HeroSection() {
           {/* Image */}
           <div className="relative">
             <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
+              <img
                 src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop&crop=center"
                 alt="E-commerce hero"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="w-full h-full object-cover"
               />
             </div>
 

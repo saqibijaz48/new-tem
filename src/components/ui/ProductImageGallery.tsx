@@ -32,13 +32,10 @@ export default function ProductImageGallery({
     <div className="space-y-4">
       {/* Main Image */}
       <div className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden">
-        <Image
+        <img
           src={getImageUrl(displayImages[currentIndex], 600, 600)}
           alt={`${productName} - Image ${currentIndex + 1}`}
-          fill
-          className="object-cover"
-          priority
-          sizes="(max-width: 768px) 100vw, 50vw"
+          className="w-full h-full object-cover"
         />
 
         {/* Navigation Arrows */}
@@ -90,12 +87,10 @@ export default function ProductImageGallery({
                   : "border-transparent hover:border-gray-300",
               )}
             >
-              <Image
+              <img
                 src={getImageUrl(image, 150, 150)}
                 alt={`${productName} - Thumbnail ${index + 1}`}
-                fill
-                className="object-cover"
-                sizes="150px"
+                className="w-full h-full object-cover"
               />
             </button>
           ))}

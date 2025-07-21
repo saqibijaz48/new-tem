@@ -66,12 +66,10 @@ export default function BlogPage() {
                   >
                     {post.featured_image && (
                       <div className="relative h-48 bg-gray-200">
-                        <Image
+                        <img
                           src={post.featured_image}
                           alt={title}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     )}
