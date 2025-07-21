@@ -268,11 +268,16 @@ export function isSupabaseConfigured(): boolean {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  return !!(
-    url &&
-    key &&
-    url !== "https://your-project.supabase.co" &&
-    key !== "your-anon-key" &&
-    url.includes("supabase.co")
-  );
+  // Temporarily force mock data usage due to Supabase connectivity issues
+  // TODO: Re-enable Supabase once connectivity is resolved
+  return false;
+
+  // Original logic:
+  // return !!(
+  //   url &&
+  //   key &&
+  //   url !== "https://your-project.supabase.co" &&
+  //   key !== "your-anon-key" &&
+  //   url.includes("supabase.co")
+  // );
 }
